@@ -40,12 +40,17 @@ var firebaseConfig = {
         image.style.borderRadius="4px"
         image.style.display="block"
         image.style.margin="auto"
+        const price = document.createElement("h4")
+        price.innerHTML="R$" + doc.price
+        price.style.margin="auto"
+        price.style.width="90%"
         const description = document.createElement("p")
         description.innerHTML=doc.description
         description.style.width="90%"
         description.style.margin="auto"
         box.appendChild(title)
         box.appendChild(image)
+        box.appendChild(price)
         box.appendChild(description)
         vehicle_content.appendChild(box)
 
@@ -65,9 +70,9 @@ async function readVehicles() {
         car_name: doc.data().car_name,
         author: doc.data().author,
         image: doc.data().image,
+        price: doc.data().price,
         download_link: doc.data().download_link,
         })
     }
     renderVehicles()
 }
-readVehicles()

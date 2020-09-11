@@ -36,6 +36,29 @@
         </div>
       </nav>
 
+      <div class="filters">
+        <label>Marca:</label>
+        <select id="brand">
+          <option value="chevrolet">Chevrolet</option>
+          <option value="volksvagem">Volksvagem</option>
+          <option value="ford">Ford</option>
+          <option value="fiat">Fiat</option>
+          <option value="honda">Honda</option>
+        </select>
+        <label>Veículo:</label>
+        <select id="auto_name">
+          <option value="">Gol</option>
+          <option value="">Golf</option>
+          <option value="">Voyage</option>
+        </select>
+        <label id="year">Ano: De</label>
+        <select id="year1"></select>
+        Até
+        <select id="year2"></select>
+
+
+        <button onclick="readVehicles()">Pesquisar</button>
+      </div>
       <div id="vehicles">
 
       </div>

@@ -1,3 +1,46 @@
+.filters{
+    background-color: #343a40;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 50%;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.filters label{
+    padding: 5px;
+}
+.filters select{
+    width: 70%;
+    display: block;
+}
+#year{
+    padding-top: 30px;
+}
+#year1, #year2{
+    width: 20%;
+    display: inline;
+}
+.filters button{
+    width: 25%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #17a2b8;
+    color: #17a2b8;
+    height: 40px;
+    border-radius: 7px;
+}
+.filters button:hover{
+    background-color: #17a2b8;
+    color: white;
+}
+
+
+
 #vehicles{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -14,6 +57,12 @@
 #vehicles{
     display: grid;
     grid-template-columns: 1fr;
+}
+.filters{
+    width: 98%;
+}
+.filters button{
+    width: 40%;
 }
 
 }
