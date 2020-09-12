@@ -49,9 +49,24 @@
     font-size: 20px;
     font-family: sans-serif;
 }
-#vehicles div:hover{
+#vehicles #card:hover{
     box-shadow: 0 0 10px;
     cursor: pointer;
+}
+#itens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
+}
+#itens div{
+    margin: auto;
+}
+#km{
+    display: flex;
+}
+#p_description{
+    margin: 10px;
 }
 @media screen and (max-width: 60em){
 #vehicles{

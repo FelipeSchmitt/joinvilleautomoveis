@@ -39,6 +39,7 @@
       <div class="filters">
         <label>Marca:</label>
         <select id="brand">
+          <option value="">Todos:</option>
           <option value="chevrolet">Chevrolet</option>
           <option value="volksvagem">Volksvagem</option>
           <option value="ford">Ford</option>
@@ -46,15 +47,17 @@
           <option value="honda">Honda</option>
         </select>
         <label>Veículo:</label>
-        <select id="auto_name">
-          <option value="">Gol</option>
-          <option value="">Golf</option>
-          <option value="">Voyage</option>
+        <select id="car_name">
+          <option value="">Todos:</option>
+          <option value="gol">Gol</option>
+          <option value="golf">Golf</option>
+          <option value="voyage">Voyage</option>
         </select>
-        <label id="year">Ano: De</label>
-        <select id="year1"></select>
-        Até
-        <select id="year2"></select>
+        <label id="year">Ano:</label>
+        <input type="text" id="year1"></input>
+        <input type="text" id="year2"></input>
+
+
 
 
         <button onclick="readVehicles()">Pesquisar</button>
