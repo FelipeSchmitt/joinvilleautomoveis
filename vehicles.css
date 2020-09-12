@@ -79,5 +79,8 @@
 .filters button{
     width: 40%;
 }
+#itens{
+    grid-template-columns: 1fr 1fr;
+}
 
 }

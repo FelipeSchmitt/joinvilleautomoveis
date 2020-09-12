@@ -68,7 +68,7 @@ var firebaseConfig = {
 
         itensdiv.appendChild(km_rodados)
         const h5 = document.createElement("h5")
-        h5.innerHTML=doc.km_rodados
+        h5.innerHTML=doc.km_rodados + ` km`
         const h5_versao = document.createElement("h5")
         h5_versao.innerHTML="Versão: " + doc.versao_carro
         h5.style.paddingLeft="5px"
