@@ -85,6 +85,9 @@
 #itens{
     grid-template-columns: 1fr 1fr;
 }
+#card h5{
+    font-size: 1rem;
+}
 }
 @media screen and (max-width: 1366px){
     #itens{
