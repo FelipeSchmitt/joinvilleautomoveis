@@ -71,7 +71,7 @@ var firebaseConfig = {
         h5.innerHTML=doc.km_rodados + ` km`
         const h5_versao = document.createElement("h5")
         h5_versao.style.textAlign="center"
-        h5_versao.innerHTML="Versão: " + doc.versao_carro
+        h5_versao.innerHTML=doc.versao_carro
         h5.style.paddingLeft="5px"
 
         const cilindradadiv = document.createElement("div")
