@@ -64,12 +64,13 @@ var firebaseConfig = {
         const km_rodados = document.createElement("img")
         km_rodados.src="km_icon.png"
         km_rodados.style.width="30px"
-        km_rodados.style.borderRadius="20em"
+        km_rodados.style.borderRadius="50em"
 
         itensdiv.appendChild(km_rodados)
         const h5 = document.createElement("h5")
         h5.innerHTML=doc.km_rodados + ` km`
         const h5_versao = document.createElement("h5")
+        h5_versao.style.textAlign="center"
         h5_versao.innerHTML="Versão: " + doc.versao_carro
         h5.style.paddingLeft="5px"
 
