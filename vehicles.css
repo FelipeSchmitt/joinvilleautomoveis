@@ -68,6 +68,9 @@
 #p_description{
     margin: 10px;
 }
+#card h5{
+    font-size: 1.25rem;
+}
 @media screen and (max-width: 60em){
 #vehicles{
     display: grid;
@@ -82,8 +85,9 @@
 #itens{
     grid-template-columns: 1fr 1fr;
 }
-#card h5{
-font-size: 1rem;
 }
-
+@media screen and (max-width: 1366px){
+    #itens{
+        grid-template-columns: 1fr 1fr;
+    }
 }
