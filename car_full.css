@@ -1,0 +1,90 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+}
+h2{
+    text-align: center;
+    background-color:whitesmoke;
+    margin: auto;
+    margin-top: 3px;
+    width: 80%;
+    border-radius: 3px;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: black;
+}
+h3{
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+}
+#infocar{
+    height: 100%;
+    border-style: solid;
+    border-color: #343a40;
+    border-radius: 7px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#principal_image img{
+    width: 100%;
+    border-radius: 7px; 
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#car_fulldisplay{
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+}
+#principal_image h2{
+    width: 98%;
+}
+#description{
+    background-color: white;
+    margin: auto;
+    width: 97%;
+    font-size: 32px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 500px;
+}
+#revenda_info{
+    background-color: #363636;
+    color: white;
+}
+#revenda_info img{
+    margin: 10px;
+    width: 20%;
+    border-radius: 50em;
+}
+
+
+@media screen and (max-width: 60em){
+    #car_fulldisplay{
+        grid-template-columns: 1fr;
+    }
+    #infocar{
+        border-style: none;
+    }
+    #principal_image img{
+        width: 100%;
+        border-radius: 0;
+    }
+    h2{
+        width: 95%;
+        border-radius: 0;
+    }
+    h3{
+        margin-top: 2px;
+        width: 95%;
+    }
+    #description{
+        font-size: 20px;
+    }
+}

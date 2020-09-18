@@ -1,3 +1,4 @@
+
 var firebaseConfig = {
     apiKey: "AIzaSyCNCLNf_eHvAOxkQp4y5I2UW5H31SMAi3Q",
     authDomain: "gtacitymods.firebaseapp.com",
@@ -19,6 +20,14 @@ var firebaseConfig = {
     for (doc of Vehicles){
         const box = document.createElement("div")
         box.id="card"
+        box.onclick = function(){
+          var url = window.location.href;
+          url = "http://127.0.0.1:5500/vehicle_fulldisplay.html#?" + doc.id
+          window.open(url)
+          if(url.indexOf("#?")){
+            url
+          }
+        }
         box.style.width="95%"
         box.style.margin="auto"
         box.style.height="98%"
@@ -212,4 +221,18 @@ async function readVehicles() {
         })
     }
     renderVehicles()
+  }
+
+
+  function url(){
+    const vehicle_content = document.getElementById("vehicles")
+    vehicle_content.innerHTML=""
+    for (doc of Vehicles){
+    var url = window.location.href;
+    url += + `/` + doc.id
+    }
+  }
+
+  function ID(){
+    w
   }
