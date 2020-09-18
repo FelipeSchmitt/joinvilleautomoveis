@@ -24,10 +24,6 @@ var firebaseConfig = {
           var url = window.location.href;
           url = "https://felipeschmitt.github.io/joinvilleautomoveis/vehicle_fulldisplay.html#?" + doc.id
           window.open(url)
-          if(url.indexOf("#?")){
-            url
-          }
-        }
         box.style.width="95%"
         box.style.margin="auto"
         box.style.height="98%"
