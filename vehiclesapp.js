@@ -228,7 +228,3 @@ async function readVehicles() {
     url += + `/` + doc.id
     }
   }
-
-  function ID(){
-    w
-  }
